@@ -18,7 +18,7 @@ function main(currentTime) {
   if (gameOver) {
     if (confirm("Game Over! You scored: " + `${timeScore.textContent}`)) {
       // intervalId = clearInterval()
-      window.location = "/";
+      window.location = "/snake/index.html";
     }
     return;
   }

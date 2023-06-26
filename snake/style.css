@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+/* html {
+  background: radial-gradient(#000, #111);
+  height: 100%;
+} */
 body {
   height: 100vh;
   width: 100vw;
@@ -10,7 +16,7 @@ body {
 }
 
 #game-board {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-color: #ccc;
   width: 100vmin;
   height: 100vmin;
@@ -45,50 +51,80 @@ body {
   width: fit-content;
   padding: 0px;
   text-align: center;
-  /* border: 3px solid rgb(133, 57, 82); */
   font-weight: 800;
-  /* background-color: #333333; */
-  /* border-radius: 50px; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+.keys {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  width: 50vmin;
+  height: 30vmin;
+  /* margin: auto; */
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
+.arr {
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  /* line-height: 50px; */
+  background: grey;
+  color: white;
+  font-size: 15px;
+  border-right: 10px solid darken(grey, 20);
+  border-bottom: 10px solid darken(grey, 20);
+  border-left: 10px solid darken(grey, 15);
+  border-top: 10px solid darken(grey, 10);
+  display: inline-block;
+  margin: 5px;
+  transition: all 0.05s linear;
+  &:active {
+    border-bottom: 8px solid darken(grey, 20);
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 20px white;
+    transform: translate(0, 2px);
+  }
+  user-select: none;
+}
+
+.up {
+  position: relative;
+  top: -4px;
+}
+
+.pressed {
+  border-bottom: 8px solid darken(grey, 20);
+  text-shadow: 0 0 10px white;
+  transform: translate(0, 2px);
+}
+
+.names {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white;
+}
+
+.b {
+  color: blue;
+  text-shadow: 0 0 10px blue, 0 0 10px blue, 0 0 10px blue, 0 0 10px blue;
+  font-size: 100px;
+  font-family: serif;
+}
+
+.a {
+  color: yellow;
+  text-shadow: 0 0 10px yellow, 0 0 10px yellow, 0 0 10px yellow,
+    0 0 10px yellow;
+  font-size: 100px;
+  font-family: serif;
+}
+
+.moveDiv{
+  height: 50px;
+  width: 50px;
+  background-color: yellowgreen;
 }

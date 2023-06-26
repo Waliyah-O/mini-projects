@@ -1,4 +1,5 @@
 import { getInputDirection } from "./input.js"
+// import { moveSnake } from "./input.js"
 
 export const SNAKE_SPEED = 5
 //position at start of game
