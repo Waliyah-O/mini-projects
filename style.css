@@ -335,10 +335,49 @@ main {
 .card:nth-child(16) {
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
-.card:nth-child(8) {
-  background-color: hsl(228, 12%, 48%);
+.card:nth-child(17) {
+  background-color: #34495e;
 }
-.card:nth-child(8) {
+.card:nth-child(18) {
+  background-color: #296ca8;
+}
+.card:nth-child(19) {
+  background-color: #e056fd;
+}
+.card:nth-child(20) {
+  background-color: #2d2013;
+}
+.card:nth-child(21) {
+  background-color: #aaa;
+}
+.card:nth-child(22) {
+  background-color: #30336b;
+}
+.card:nth-child(23) {
+  background-color: #6feaf6;
+}
+.card:nth-child(24) {
+  background-color: rgba(252, 169, 169, 0.6);
+}
+.card:nth-child(25) {
+  background-color: #f8ff00;
+}
+.card:nth-child(26) {
+  background-color: #224941;
+}
+.card:nth-child(27) {
+  background-color: hsl(227, 10%, 18%);
+}
+.card:nth-child(28) {
+  background-color: #ff3838;
+}
+.card:nth-child(29) {
+  background-color: darksalmon;
+}
+.card:nth-child(30) {
+  background-color: #a7c5e3;
+}
+.card:nth-child(31) {
   background-color: hsl(228, 12%, 48%);
 }
 
