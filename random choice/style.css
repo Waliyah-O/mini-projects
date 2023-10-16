@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.instructions {
+  /* color: white; */
+  margin: 10px, 0 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.container {
+  width: 500px;
+}
+
+#textarea {
+  /* background-color: #2a86ba;
+    color: white;
+    border: none; */
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  caret-color: #273c75;
+}
+
+.tag {
+  background-color: #f0932b;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #273c75;
+}
+
+@media screen and (max-width: 425px) {
+  .instructions {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 300px;
+  }
+}
