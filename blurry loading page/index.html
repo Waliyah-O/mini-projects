@@ -10,7 +10,9 @@
   </head>
   <body>
     <section class="bg"></section>
-    
+
+    <div><p>This is a blurry loading page</p></div>
+
     <div class="loading-text">0%</div>
     <script>
       const loadText = document.querySelector(".loading-text");
@@ -18,6 +20,14 @@
 
       let load = 0;
       let int = setInterval(blurring, 30);
+      /*************  ✨ Codeium Command ⭐  *************/
+      /**
+       * Increments the load variable and updates the loading text and background blur effect based on the current load value.
+       * If load exceeds 99, stops the interval timer.
+       * Adjusts the opacity of the loading text and the blur level of the background using a scaling function.
+       */
+
+      /******  b7a28454-a8ee-4a38-9dce-1e5835b02fef  *******/
       function blurring() {
         load++;
         if (load > 99) {
@@ -31,7 +41,6 @@
 
       // // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
 
-      
       const scale = (num, in_min, in_max, out_min, out_max) => {
         return (
           ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
